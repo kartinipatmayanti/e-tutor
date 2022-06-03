@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Simple Present Tense",
+    "rumus": "Subject + Verb 1 (Base/Present Form)",
+    "penjelasan": "Pada dasarnya, simple present tense merupakan salah satu tenses bahasa Inggris yang sering digunakan dalam penyusunan kalimat bahasa Inggris. Pasalnya, simple present tense ini dalam penggunaannya dapat berfungsi untuk menyatakan fakta (termasuk fakta ilmiah), kebiasaan atau rutinitas, dan juga kejadian-kejadian yang terjadi pada saat sekarang ini.",
+    "contoh": "Example : Mario works in a plumbing company."
+  },
+  {
+    "id": 2,
+    "name": "Present Continuous / Progressive Tense",
+    "rumus": "Subject + Am / Is / Are + Verb –ing (Continuous Form)",
+    "penjelasan": "Dalam pengertiannya, present continuous tense atau yang sering kali disebut present progressive tense ini adalah tenses bahasa Inggris yang digunakan untuk menunjukkan sebuah tindakan atau kejadian yang sedang terjadi pada saat pembicaraan sedang berlangsung.",
+    "contoh": "Example : Look! He is talking with his classmates."
+  },
+  {
+    "id": 3,
+    "name": "Present Perfect Tense",
+    "rumus": "Subject + Has / Have + Verb 3 (Past Participle)",
+    "penjelasan": "Present perfect tense ini dapat dikatakan tenses bahasa Inggris yang fungsinya adalah untuk menunjukkan suatu hasil. Pasalnya, tense yang satu ini dapat digunakan untuk menjabarkan suatu aktivitas ataupun situasi yang telah dimulai di masa lalu, dan telah selesai di masa lalu juga atau masih berlanjut sampai sekarang.",
+    "contoh": "Example : He has already finished his homework."
+  },
+  {
+    "id": 4,
+    "name": "Present Perfect Continuous Tense",
+    "rumus": "Subject + Has / Have + Been + Verb –ing (Continuous Form)",
+    "penjelasan": "Present perfect contiunous tense atau yang juga sering disebut present perfect progressive tense adalah salah satu tenses bahasa Inggris yang pada penggunaannya memiliki fungsi untuk menjabarkan suatu tindakan yang telah selesai di masa lampau atau juga bisa untuk menjabarkan suatu tindakan yang telah dimulai di masa lalu dan masih terus berlangsung hingga sekarang.",
+    "contoh": "Example : He has been working here since 1996."
+  },
+  {
+    "id": 5,
+    "name": "Simple Past Tense",
+    "rumus": "Subject + Verb 2",
+    "penjelasan": "Simple past tense ini adalah kebalikan dari simple present tense, yang mana tenses bahasa Inggris ini memiliki fungsi untuk menjabarkan suatu kejadian yang telah terjadi di masa lampau.",
+    "contoh": "Example : Last year, he always worked until night."
+  },
+  {
+    "id": 6,
+    "name": "Past Continuous Tense",
+    "rumus": "Subject + Was / Were + Verb –ing (Continuous Form)",
+    "penjelasan": "Tenses bahasa Inggris yang satu ini sering digunakan untuk menjabarkan bahwa suatu kejadian atau tindakan sedang terjadi pada waktu tertentu di masa lalu. Apabila kita sering membaca sebuah cerita, di situ biasanya ada dua atau lebih kejadian berbeda di masa lampau dan satu kejadian yang sedang menginterupsi kejadian yang lain.Tenses bahasa Inggris yang satu ini sering digunakan untuk menjabarkan bahwa suatu kejadian atau tindakan sedang terjadi pada waktu tertentu di masa lalu. Apabila kita sering membaca sebuah cerita, di situ biasanya ada dua atau lebih kejadian berbeda di masa lampau dan satu kejadian yang sedang menginterupsi kejadian yang lain.",
+    "contoh": "Example : He was speaking when I entered in room."
+  },
+  {
+    "id": 7,
+    "name": "Past Perfect Tense",
+    "rumus": "Subject + Had + Verb 3 (Past Participle)",
+    "penjelasan": "Past perfect tense ini adalah tenses bahasa Inggris yang digunakan untuk menunjukkan suatu kejadian yang terjadi sebelum waktu tertentu di masa lampau. Pada dasarnya, past perfect tense ini lebih menekankan fakta ketimbang durasi. Jadi intinya, past perfect tense ini pada penggunaannya lebih untuk menyatakan bahwa suatu tindakan telah selesai di masa lalu, sebelum tindakan lainnya terjadi di masa lalu juga.",
+    "contoh": "Example : He had finished his designs before he went to work yesterday."
+  },
+  {
+    "id": 8,
+    "name": "Past Perfect Continuous Tense",
+    "rumus": "Subject + Had + Been + Verb –ing (Continuous Form)",
+    "penjelasan": "Sama seperti past perfect tense, penggunaan past perfect continuous tense, atau juga dikenal sebagai past perfect progressive tense ini memiliki maksud untuk mengungkapkan sebuah tindakan yang terjadi di masa lalu, dan telah selesai pada suatu titik tertentu di masa lalu pula. Hanya saja, tenses bahasa Inggris ini lebih menekankan pada durasi kejadian tersebut.",
+    "contoh": "Example : He had finished his designs before he went to work yesterday.."
+  },
+  {
+    "id": 9,
+    "name": "Simple Future Tense",
+    "rumus": "Subject + Will + Verb 1 (Present Form)",
+    "penjelasan": "Pada dasarnya, simple future tense ini adalah tenses bahasa Inggris yang memiliki fungsi untuk menjabarkan suatu tindakan di masa yang akan datang dan tidak dapat dipengaruhi oleh tindakan-tindakan yang lain.",
+    "contoh": "Example : He is going to be a journalist after he graduates next year."
+  },
+  {
+    "id": 10,
+    "name": "Future Continuous Tense",
+    "rumus": "S + Will + Be + Verb –ing (Continuous form)",
+    "penjelasan": "Seperti tenses Bahasa Inggris lainnya, future continuous tense atau yang juga disebut future progressive tense ini berfungsi untuk menunjukkan suatu tindakan yang terjadi di waktu tertentu. Tenses bahasa Inggris ini berfokus pada masa yang akan datang dan juga tindakan yang pasti akan terjadi dalam waktu dekat di masa depan.",
+    "contoh": "Example : He will be delivering the speech to undergraduates at 3 p.m tomorrow afternoon."
+  },
+  {
+    "id": 11,
+    "name": "Future Perfect Tense",
+    "rumus": "Subject + Will + Have + Verb 3 (Past Participle)",
+    "penjelasan": "Menurut fungsinya, future perfect tense ini dapat digunakan untuk mengungkapkan bahwa suatu aktivitas sudah akan selesai pada suatu titik waktu di masa yang akan datang. Intinya, tenses bahasa Inggris yang satu ini menekankan pada tindakan yang akan berakhir pada waktu tertentu di masa depan.",
+    "contoh": "Example : He will have finished the task by next Monday."
+  },
+  {
+    "id": 12,
+    "name": "Future Perfect Continuous Tense",
+    "rumus": "Subject + Will + Have + Been + Verb –ing (Continuous Form)",
+    "penjelasan": "Pada dasarnya, semua jenis perfect continuous tense itu konsepnya hampir sama. Nah, untuk future perfect continuous tense, atau yang kerap disebut future perfect progressive tense ini pada penggunaannya berfungsi untuk mengungkapkan bahwa suatu tindakan akan sudah berlangsung selama sekian lama, pada titik waktu tertentu di masa depan.",
+    "contoh": "Example : He will have been taking charge of the team for the next hour."
+  },
+  {
+    "id": 13,
+    "name": "Simple Past Future Tense",
+    "rumus": "Subject + Would + Verb 1",
+    "penjelasan": "Pada intinya, simple past future tense ini digunakan untuk kalimat yang tidak langsung, di mana di situ terdapat perubahan bentuk untuk menyesuaikan dengan rangkaian peristiwa yang ada. Jadi, jika diambil kesimpulan, simple past future tense ini menyatakan suatu tindakan yang akan dilakukan, membuat prediksi, dan membuat janji di masa depan saat berada di masa lalu.",
+    "contoh": "Example : He said that he would leave in three days."
+  },
+  {
+    "id": 14,
+    "name": "Past Future Continuous Tense",
+    "rumus": "Subject + Should / Would + Be + Verb –ing (Continuous Form)",
+    "penjelasan": "Past future continuous tense, atau juga disebut past future progressive tense, merupakan salah satu bentuk kata kerja untuk menyatakan situasi ataupun tindakan imajiner yang sedang berlangsung, apabila kondisi tidak langsungnya terpenuhi.",
+    "contoh": "Example : I made a promise that I would be doing my homework all day long tomorrow."
+  },
+  {
+    "id": 15,
+    "name": "Past Future Perfect Tense",
+    "rumus": "Subject + Should / Could / Would  Have + Verb 3 (Past Participle)",
+    "penjelasan": "Pada konsepnya, past future perfect tense ini bisa digunakan untuk membicarakan suatu tindakan yang tidak terjadi di masa lalu.",
+    "contoh": "Example : He told the students that they should have finished the homework this morning."
+  },
+  {
+    "id": 16,
+    "name": "Past Future Perfect Continuous Tense",
+    "rumus": "Subject + Should / Could / Would  Have + Been + Verb –ing (Continuous Form)",
+    "penjelasan": "Kebanyakan orang mengakui bahwa past future perfect continuous tense atau past future perfect progressive tense adalah salah satu jenis tenses bahasa Inggris yang cukup sulit. Memang, tapi bukan berarti tidak bisa dipahami. Pada konsepnya, past future perfect continuous tense ini adalah salah satu bentuk kata kerja untuk menyatakan sebuah tindakan atau situasi imaginer sedang berlangsung, pada titik tertentu atau selama periode tertentu di masa lampau. Artinya, si pembicara sedang membicarakan situasi secara imaginer, yang mana keadaan tersebut tidak nyata atau hanya angan-angan.",
+    "contoh": "Example : I heard that you should have been teaching here for ten years by this July."
+  }
+]
