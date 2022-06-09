@@ -12,6 +12,5 @@ class ModelKosaKata {
     name = json['name'];
     kosakata = json['kosakata'];
     arti = json['arti'];
-
   }
 }

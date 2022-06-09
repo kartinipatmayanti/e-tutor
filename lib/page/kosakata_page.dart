@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:e_tutor/model/model_kosakata.dart';
-import 'package:e_tutor/model/model_materi.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 

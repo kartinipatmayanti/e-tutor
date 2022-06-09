@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Kata Sifat",
-    "kosakata": ["Lazy","Smart"],
-    "arti": ["Malas", "Cerdas"]
+    "kosakata": "Lazy",
+    "arti": "Malas"
   },
   {
     "id": 2,
