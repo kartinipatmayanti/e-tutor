@@ -59,7 +59,7 @@ class _KosaKataState extends State<KosaKata> {
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Kosakata Bahasa Inggris ",
+                              "Kosakata Bahasa Inggris yang terbagi kedalam 4 kategori",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
