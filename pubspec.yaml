@@ -65,6 +65,12 @@ flutter:
       - assets/images/ic_kosakata.png
       - assets/images/ic_materi.png
       - assets/images/bg_materi.png
+      - assets/images/kosakata.jpg
+      - assets/images/bg_etutor.png
+      - assets/images/Fira.png
+      - assets/images/Rifdah.png
+      - assets/images/Patma.png
+      
 
       - assets/data/kosakata.json
       - assets/data/materi.json

@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => BacaanSholat()));
+                              builder: (context) => KosaKata()));
                     },
                     child: Column(
                       children: [
@@ -90,7 +90,7 @@ class _MainPageState extends State<MainPage> {
                     splashColor: Colors.transparent,
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => AyatKursi()));
+                          MaterialPageRoute(builder: (context) => TentangKami()));
                     },
                     child: Column(
                       children: [

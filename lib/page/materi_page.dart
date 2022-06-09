@@ -43,7 +43,7 @@ class _MateriState extends State<Materi> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         color: Color(0xff0e1446)),
-                    height: 200,
+                    height: 300,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
                         margin: EdgeInsets.only(top: 120, left: 20),
@@ -62,9 +62,9 @@ class _MateriState extends State<Materi> {
                               "Di luar sana, ada banyak orang yang kebingungan bagaimana harus mulai belajar grammar. Karena ketidaktahuan itulah, banyak yang menganggap grammar adalah pelajaran yang sangat sulit. Padahal jika diselami lebih dalam, grammar cukup mudah kok untuk dipelajari.",
                               style: TextStyle(
                                   color: Colors.white,
-                                  
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold),
+                                  textAlign: TextAlign.justify,
                             ),
                           ],
                         )),

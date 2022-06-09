@@ -4,14 +4,14 @@ import 'package:e_tutor/model/model_materi.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class BacaanSholat extends StatefulWidget {
-  const BacaanSholat({Key? key}) : super(key: key);
+class KosaKata extends StatefulWidget {
+  const KosaKata({Key? key}) : super(key: key);
 
   @override
-  _BacaanSholatState createState() => _BacaanSholatState();
+  _KosaKataState createState() => _KosaKataState();
 }
 
-class _BacaanSholatState extends State<BacaanSholat> {
+class _KosaKataState extends State<KosaKata> {
   Future<List<ModelKosaKata>> ReadJsonData() async {
     final jsondata =
         await rootBundle.rootBundle.loadString('assets/data/kosakata.json');
@@ -22,7 +22,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff0e1446),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -33,7 +33,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                   alignment: Alignment.topLeft,
                   child: IconButton(
                     onPressed: () => Navigator.of(context).pop(),
-                    icon: Icon(Icons.arrow_back, color: Colors.white),
+                    icon: Icon(Icons.arrow_back, color: Colors.black),
                   ),
                 ),
                 Align(
@@ -42,7 +42,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                     margin: EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color(0xff44aca0)),
+                        color: Color(0xff0e1446)),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -59,7 +59,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bahasa Inggris",
+                              "Kosakata Bahasa Inggris ",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -78,7 +78,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/image/bg",
+                      "assets/images/kosakata.jpg",
                       width: 330,
                       height: 200,
                       fit: BoxFit.fitWidth,
@@ -149,8 +149,16 @@ class _BacaanSholatState extends State<BacaanSholat> {
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 8, right: 8),
-                                          
-                                                ),
+                                              child: Text(
+                                                        items[index]
+                                                            .arti
+                                                            .toString(),
+                                                        style: TextStyle(
+                                                            fontSize: 14,
+                                                            fontStyle:
+                                                                FontStyle.italic),
+                                                      ),
+                                                    ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 8,
