@@ -2,25 +2,49 @@
   {
     "id": 1,
     "name": "Kata Sifat",
-    "kosakata": "Lazy",
-    "arti": "Malas"
+    "vocab": [
+      {
+        "id": 1,
+        "kosakata": "Lazy",
+        "arti": "Malas"
+      },
+      {
+        "id": 2,
+        "kosakata": "Diligent",
+        "arti": "Rajin"
+      },
+      {
+        "id": 3,
+        "kosakata": "Strong",
+        "arti": "Kuat"
+      },
+      {
+        "id": 4,
+        "kosakata": "Diligent",
+        "arti": "Rajin"
+      }
+    ]
   },
+
   {
     "id": 2,
     "name": "Kata Kerja",
-    "kosakata": "Go",
-    "arti": "Pergi"
-  },
-  {
-    "id": 3,
-    "name": "Keterangan Tempat",
-    "kosakata": "Home",
-    "arti" : "Rumah"
-  },
-  {
-    "id": 4,
-    "name": "Keterangan Waktu",
-    "kosakata": "Tomorrow",
-    "arti" : "Besok"
+    "vocab": [
+      {
+        "id": 1,
+        "kosakata": "Go",
+        "arti": "Pergi"
+      },
+      {
+        "id": 2,
+        "kosakata": "Take",
+        "arti": "Mengambil"
+      },
+      {
+        "id": 3,
+        "kosakata": "Buy",
+        "arti": "Membeli"
+      }
+    ]
   }
 ]

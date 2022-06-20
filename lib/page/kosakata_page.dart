@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:async';
 import 'package:e_tutor/model/model_kosakata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
@@ -11,12 +12,21 @@ class KosaKata extends StatefulWidget {
 }
 
 class _KosaKataState extends State<KosaKata> {
-  Future<List<ModelKosaKata>> ReadJsonData() async {
-    final jsondata =
-        await rootBundle.rootBundle.loadString('assets/data/kosakata.json');
-    final list = json.decode(jsondata) as List<dynamic>;
-    return list.map((e) => ModelKosaKata.fromJson(e)).toList();
+  Future<String> loadModelKosaKataFromAssets() async {
+    return await rootBundle.rootBundle.loadString('assets/data/kosakata.json');
   }
+
+  Future loadModelKosaKata() async {
+    String jsonString = await loadModelKosaKataFromAssets();
+    final jsonResponse = json.decode(jsonString);
+    ModelKosaKata kosaKata = new ModelKosaKata.fromJson(jsonResponse);
+}
+
+@override
+void initstate(){
+  super.initState();
+  loadModelKosaKata();
+}
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +100,7 @@ class _KosaKataState extends State<KosaKata> {
             Expanded(
               child: Container(
                 child: FutureBuilder(
-                  future: ReadJsonData(),
+                  future: loadModelKosaKata(),
                   builder: (context, data) {
                     if (data.hasError) {
                       return Center(child: Text("${data.error}"));
@@ -135,9 +145,9 @@ class _KosaKataState extends State<KosaKata> {
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 8, right: 8),
-                                                  child: Text(
+                                                  child: Text(                                                    
                                                     items[index]
-                                                        .kosakata
+                                                        .vocab
                                                         .toString(),
                                                     style: TextStyle(
                                                         fontSize: 16,
@@ -145,19 +155,6 @@ class _KosaKataState extends State<KosaKata> {
                                                             FontWeight.bold),
                                                   ),
                                                 ),
-                                                Padding(
-                                                  padding: EdgeInsets.only(
-                                                      left: 8, right: 8),
-                                              child: Text(
-                                                        items[index]
-                                                            .arti
-                                                            .toString(),
-                                                        style: TextStyle(
-                                                            fontSize: 14,
-                                                            fontStyle:
-                                                                FontStyle.italic),
-                                                      ),
-                                                    ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 8,

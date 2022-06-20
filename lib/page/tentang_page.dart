@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 
 class TentangKami extends StatefulWidget {
+  
   const TentangKami({Key? key}) : super(key: key);
+  
 
   @override
   _TentangKamiState createState() => _TentangKamiState();
+  
 }
 
 class _TentangKamiState extends State<TentangKami> {
   @override
+  
   Widget build(BuildContext context) {
+    
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -118,6 +123,9 @@ class _TentangKamiState extends State<TentangKami> {
                                           fontStyle: FontStyle.italic),
                                           textAlign: TextAlign.center,
                                         ),
+                                        Padding(
+                                          padding: EdgeInsets.only(bottom: 10.0),
+                                        ),
                                         Container(
                                           height: 300.0,
                                           width: 300.0,
@@ -140,6 +148,9 @@ class _TentangKamiState extends State<TentangKami> {
                                           style: TextStyle(fontSize: 16.0, color: Colors.black,
                                           fontStyle: FontStyle.italic),
                                           textAlign: TextAlign.center,
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(bottom: 10.0),
                                         ),
                                         Container(
                                           height: 300.0,
