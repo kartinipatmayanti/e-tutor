@@ -4,6 +4,8 @@ import 'package:e_tutor/model/model_kosakata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
+import 'package:translator/translator.dart';
+
 class KosaKata extends StatefulWidget {
   const KosaKata({Key? key}) : super(key: key);
 
@@ -12,21 +14,28 @@ class KosaKata extends StatefulWidget {
 }
 
 class _KosaKataState extends State<KosaKata> {
-  Future<String> loadModelKosaKataFromAssets() async {
-    return await rootBundle.rootBundle.loadString('assets/data/kosakata.json');
+  
+  GoogleTranslator translator = new GoogleTranslator();   //using google translator
+  
+  
+  String out = "";
+  final lang=TextEditingController();   //getting text
+
+
+void trans()
+  {
+    
+    translator.translate(lang.text, to: 'id')   //translating to hi = hindi
+      .then((output) 
+      {
+          setState(() {
+           //out = output;                          //placing the translated text to the String to be used
+            out = output.text;                          //placing the translated text to the String to be used
+          });
+          print(out);
+      });
   }
 
-  Future loadModelKosaKata() async {
-    String jsonString = await loadModelKosaKataFromAssets();
-    final jsonResponse = json.decode(jsonString);
-    ModelKosaKata kosaKata = new ModelKosaKata.fromJson(jsonResponse);
-}
-
-@override
-void initstate(){
-  super.initState();
-  loadModelKosaKata();
-}
 
   @override
   Widget build(BuildContext context) {
@@ -61,14 +70,14 @@ void initstate(){
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Kosa Kata",
+                              "Translate",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Kosakata Bahasa Inggris yang terbagi kedalam 4 kategori",
+                              "Menerjemahkan bahasa Inggris ke Indonesia",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -99,88 +108,26 @@ void initstate(){
             SizedBox(height: 10),
             Expanded(
               child: Container(
-                child: FutureBuilder(
-                  future: loadModelKosaKata(),
-                  builder: (context, data) {
-                    if (data.hasError) {
-                      return Center(child: Text("${data.error}"));
-                    } else if (data.hasData) {
-                      var items = data.data as List<ModelKosaKata>;
-                      return ListView.builder(
-                          itemCount: items == null ? 0 : items.length,
-                          itemBuilder: (context, index) {
-                            return Card(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              elevation: 5,
-                              margin: EdgeInsets.all(15),
-                              child: Theme(
-                                data: Theme.of(context)
-                                    .copyWith(dividerColor: Colors.transparent),
-                                child: ExpansionTile(
-                                  title: Text(
-                                    items[index].name.toString(),
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  children: [
-                                    Container(
-                                      padding: EdgeInsets.all(8),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: [
-                                          Expanded(
-                                              child: Container(
-                                            padding: EdgeInsets.only(bottom: 8),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Padding(
-                                                  padding: EdgeInsets.only(
-                                                      left: 8, right: 8),
-                                                  child: Text(                                                    
-                                                    items[index]
-                                                        .vocab
-                                                        .toString(),
-                                                    style: TextStyle(
-                                                        fontSize: 16,
-                                                        fontWeight:
-                                                            FontWeight.bold),
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsets.only(
-                                                      left: 8,
-                                                      right: 8,
-                                                      top: 5),
-                                                  
-                                                )
-                                              ],
-                                            ),
-                                          ))
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          });
-                    } else {
-                      return Center(
-                        child: CircularProgressIndicator(),
-                      );
-                    }
-                  },
-                ),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              TextField(
+                controller: lang,
               ),
+              RaisedButton(
+            color: Color(0xff0e1446),
+            child: Text("Press !!", 
+            style: TextStyle(color: Colors.white ),),            //on press to translate the language using function
+            onPressed: ()
+            {
+              trans();
+            },
+          ),
+          Text(out.toString())                    //translated string
+            ],
+          )
+        ),
+      ),
             ),
           ],
         ),
