@@ -116,7 +116,7 @@ void trans()
               ),
               RaisedButton(
             color: Color(0xff0e1446),
-            child: Text("Press !!", 
+            child: Text("Translate !!!", 
             style: TextStyle(color: Colors.white ),),            //on press to translate the language using function
             onPressed: ()
             {

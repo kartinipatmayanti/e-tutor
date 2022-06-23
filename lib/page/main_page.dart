@@ -72,7 +72,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Kosa Kata E-Tutor",
+                          "Translate E-Tutor",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),

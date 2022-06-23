@@ -38,13 +38,23 @@ void trans()
           });
           print(out);
       });
+
+       translator.translate(lang.text, to: 'en')   //translating to hi = hindi
+      .then((output) 
+      {
+          setState(() {
+           //out = output;                          //placing the translated text to the String to be used
+            out = output.text;                          //placing the translated text to the String to be used
+          });
+          print(out);
+      });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Translate !!"),
+        title: Text("Translate"),
       ),
       body: Container(
         child: Center(
@@ -55,7 +65,7 @@ void trans()
               ),
               RaisedButton(
             color: Color(0xff0e1446),
-            child: Text("Press !!", 
+            child: Text("Press", 
             style: TextStyle(color: Colors.white ),),            //on press to translate the language using function
             onPressed: ()
             {
